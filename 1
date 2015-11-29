@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class main{
+	public static void main(String args[]){
+		int i;
+		int k;
+		int x;
+		String doing;
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Введите первое число:");
+		i = scn.nextInt();
+		System.out.print("Введите второе число:");
+		k = scn.nextInt();
+		System.out.print("Введите действие:");
+		doing = scn.next();
+		String a = "+";
+		String b = "-";
+		String c = "*";
+		String d = ":";
+		System.out.print("Результат:");
+		if (doing.equals(a)){
+			x = i + k;
+			System.out.println(x);
+		}
+		if (doing.equals(b)){
+			x = i - k;
+			System.out.println(x);
+		}
+		if (doing.equals(c)){
+			x = i * k;
+			System.out.println(x);
+		}
+		if (doing.equals(d)){
+			x = i / k;
+			System.out.println(x);
+		}
+	}
+}
